@@ -9,7 +9,6 @@ export const routes: Routes = [
     { path: 'about', component: AboutPageComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: '**', redirectTo: 'home', pathMatch: 'full' },
-
 ];
 
 @NgModule({
