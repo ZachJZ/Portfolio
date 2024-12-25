@@ -1,381 +1,337 @@
-<button (click)="routeMe('about')">CLICK</button>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"> -->
-
-
-    <title>Album example for Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-    <!-- Custom styles for this template -->
-    <!-- <link href="album.css" rel="stylesheet"> -->
-</head>
-
-<body>
-
-<header>
-    <div class="collapse bg-dark" id="navbarHeader">
+<section class="jumbotron text-center">
+<div class="container">
+    <h1 class="jumbotron-heading">About</h1>
+    <p class="lead text-muted">Zach is a software developer with a vision for shaping the future with innovative technology. 
+        He became passionate about programming when he learned how to could create systems and solve problems, and since then it has grown into a desire to  
+        focus on crafting user-centric solutions to make life easier and more convenient for clients. His expertise is in UI design, front-end development, and 
+        technologies based around Angular and TypeScript. Bringing a thoughtful, adaptable approach to every project, he prioritizes clear 
+        communication, integrity, and sustainability in the work he does. If you share that vision for impactful technology, explore this portfolio and connect!</p>
+    <p>
+    <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
+    <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+    </p>
+</div>
+</section>
+<!-- category -->
+<!-- EXPERIENCE -->
+<section class="jumbotron">
     <div class="container">
-        <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-            <h4 class="text-white">About</h4>
-            <!-- <p class="text-muted">I’m a passionate software developer with a vision for shaping the future through innovative technology. 
-                My love for programming began with creating systems and solving problems, and it has grown into a career focused on crafting 
-                user-centric solutions that make life easier and more convenient. With expertise in UI design, front-end development, and 
-                technologies like Angular and TypeScript, I bring a thoughtful, adaptable approach to every project. Whether releasing platforms 
-                like Helix at Infosys or collaborating with other professionals, I prioritize clear communication, integrity, and sustainability 
-                in my work. If you share my vision for impactful technology, explore my portfolio and let’s connect!</p> -->
-            <p class="text-muted">I’m a software developer with a vision for shaping the future with innovative technology. 
-                I became passionate about programming when I found I could create systems and solve problems, and since then it has grown into a desire to  
-                focus on crafting user-centric solutions to make life easier and more convenient. My expertise is in UI design, front-end development, and 
-                technologies based around Angular and TypeScript. I bring a thoughtful, adaptable approach to every project. I prioritize clear 
-                communication, integrity, and sustainability in my work. If you share my vision for impactful technology, explore my portfolio and let’s connect!</p>
+        <h1 class="jumbotron-heading" id="experience">Experience</h1>
+        <br>
+        <!-- INFOSYS -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10">
+                <h3>UI Developer</h3>
+                <div class="justify-content-between align-items-center">
+                    <h4 class="subheading mb-3">&commat;Infosys</h4>
+                </div>
+                <ul>
+                    Leveraged experience with Angular/Typescript libraries ngx-bootstrap, angular-ui-grid, and prime-ng to complete product release of SLA Ticket System app with additional document upload history and search systems in 3-week sprints using JIRA/scrumban and AGILE workflow. 
+                    Consistently completed 20-30 defects/improvements and delivered 1-3 features per sprint, contributing to a 95% minimum weekly and 99% overall adherence to SLA deadlines. Achieved a 90% effectiveness rate in resolving defects within 24 hours, ensuring prompt issue resolution and maintaining high-quality standards.
+                    Developed critical features including an application-wide search feature, notification system for User Guide, Release Notes, SLA events, and PDF upload/access tracking, demonstrating proficiency in frontend development and enhancing platform functionality.
+                    Collaborated with the Project Owner to assist users with account creation, troubleshoot issues, and provide ongoing support, ensuring effective platform utilization and user satisfaction.                        
+                </ul>
+            </div>
+            <div class="flex-shrink-0">Dec '21 - Oct '23</div>
         </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-            <h4 class="text-white">Contact</h4>
-            <ul class="list-unstyled">
-            <li><a href="https://www.linkedin.com/in/zzumtobel/" class="text-white">Linkedin</a></li>
-            <li><a href="#" class="text-white">Email Me</a></li>
-            </ul>
+        <!-- REVATURE -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10">
+                <h3>Full Stack Developer</h3>
+                <h4 class="subheading mb-3">&commat;Revature</h4>
+                <ul>
+                    Trained Java-Angular fullstack and associated technologies creating three applications: a basic Expense Reimbursement System; MyMDB, a movie review database; and LifeSigns, a hospital management application
+                    Developed frontend with Angular, TypeScript, HTML/CSS, and Bootstrap to create responsive user experience across devices and platforms.
+                    Utilized Java technologies like JDBC, Hibernate, and Spring MVC, coupled with PostgreSQL and Maven, for efficient database management and project scalability.
+                    Leveraged AWS including RDS, S3, and EC2 for effective cloud infrastructure deployment and management, meeting project requirements.
+                    Employed JUnit for backend testing, Jasmine for frontend behavior validation, and Mockito for dependency simulation, ensuring 75-90%+ testing coverage throughout each project lifecycle.
+                    Implemented DevOps practices through Continuous Delivery using Jenkins pipeline to automate builds, testing, and deployment.  
+                </ul>
+            </div>
+            <div class="flex-shrink-0">Sept '21 - Dec '21</div>
         </div>
-        </div>
     </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark box-shadow">
-    <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-        <strong>TEST</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-    </div>
-</header>
+</section>
 
-<main role="main">
-
-    <section class="jumbotron text-center">
+<!-- EDUCATION -->
+<section class="jumbotron">
     <div class="container">
-        <h1 class="jumbotron-heading">About</h1>
-        <p class="lead text-muted">Zach is a software developer with a vision for shaping the future with innovative technology. 
-            He became passionate about programming when he learned how to could create systems and solve problems, and since then it has grown into a desire to  
-            focus on crafting user-centric solutions to make life easier and more convenient for clients. His expertise is in UI design, front-end development, and 
-            technologies based around Angular and TypeScript. Bringing a thoughtful, adaptable approach to every project, he prioritizes clear 
-            communication, integrity, and sustainability in the work he does. If you share that vision for impactful technology, explore this portfolio and connect!</p>
-        <p>
-        <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
-        </p>
+        <h1 class="jumbotron-heading" id="education">Education</h1>
+        <br>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10">
+                <h3>Bachelor of Science - Game Design</h3>
+                <div class="justify-content-between align-items-center">
+                    <h4 class="subheading mb-3">&commat;Full Sail University</h4>
+                </div>
+                <ul>
+                    GPA: 3.78 out of 4.0
+                </ul>
+                <ul>
+                    Member of National Society of Collegiate Scholars
+                </ul>
+            </div>
+            <div class="flex-shrink-0">Aug '15 - Mar '18</div>
+        </div>
     </div>
-    </section>
-    <!-- category -->
-    <!-- EXPERIENCE -->
-    <section class="jumbotron">
-        <div class="container">
-            <h1 class="jumbotron-heading" id="experience">Experience</h1>
-            <br>
-            <!-- INFOSYS -->
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10">
-                    <h3>UI Developer</h3>
-                    <div class="justify-content-between align-items-center">
-                        <h4 class="subheading mb-3">&commat;Infosys</h4>
-                    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="jumbotron">
+    <div class="container">
+        <h1 class="jumbotron-heading" id="education">Skills</h1>
+        <br>
+        <h3>Programming Languages</h3>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10 row">
+                <div class="justify-content-between align-items-center">
                     <ul>
-                        Leveraged experience with Angular/Typescript libraries ngx-bootstrap, angular-ui-grid, and prime-ng to complete product release of SLA Ticket System app with additional document upload history and search systems in 3-week sprints using JIRA/scrumban and AGILE workflow. 
-                        Consistently completed 20-30 defects/improvements and delivered 1-3 features per sprint, contributing to a 95% minimum weekly and 99% overall adherence to SLA deadlines. Achieved a 90% effectiveness rate in resolving defects within 24 hours, ensuring prompt issue resolution and maintaining high-quality standards.
-                        Developed critical features including an application-wide search feature, notification system for User Guide, Release Notes, SLA events, and PDF upload/access tracking, demonstrating proficiency in frontend development and enhancing platform functionality.
-                        Collaborated with the Project Owner to assist users with account creation, troubleshoot issues, and provide ongoing support, ensuring effective platform utilization and user satisfaction.                        
                     </ul>
                 </div>
-                <div class="flex-shrink-0">Dec '21 - Oct '23</div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\typescript-programming-language-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        TypeScript
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="assets\images\svgimages\java-programming-language-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Java
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\html-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        HTML
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="..\assets\images\svgimages\css-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        CSS
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\c-sharp-programming-language-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        C#
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                </div>
             </div>
-            <!-- REVATURE -->
+            <div class="flex-shrink-0"></div>
+        </div>
+        <h3>Front End</h3>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10 row">
+                <div class="justify-content-between align-items-center">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="../assets/images/svgimages/angular-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Angular
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img style="margin-left: 1.7vw;" class="icon" src="..\assets\images\svgimages\Logo_jasmine.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Jasmine
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\karma-seeklogo.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Karma
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\Swagger.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Swagger
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                </div>
+            </div>
+        </div>
+        <h3>Back End & Database</h3>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10 row">
+                <div class="justify-content-between align-items-center">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\postgresql-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        PostgreSQL
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\mysql-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        MySQL
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="../assets/images/svgimages/angular-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Blank
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="../assets/images/svgimages/angular-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Hibernate
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="../assets/images/svgimages/angular-icon.svg" alt="IMAGE">
+                    <div class="text-center">
+                        JUnit
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10 row">
+                <div class="justify-content-between align-items-center">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Maven
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Spring Boot, Data, MVC
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        AWS RDS, S3, EC2
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Hibernate
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        JUnit
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Other Skills</h3>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10 row">
+                <div class="justify-content-between align-items-center">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Mictosoft Word
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Mictosoft Excel
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Mictosoft Powerpoint
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Mictosoft Azure
+                    </div>
+                </div>
+                <div class="pl-0 col-2">
+                    <img class="icon" src="\assets\images\svgimages\maven-svgrepo-com.svg" alt="IMAGE">
+                    <div class="text-center">
+                        Blank
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="pl-0 col-10 row">
+                <div class="justify-content-between align-items-center">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="pl-0 col-2">
+                    
+                </div>
+                <div class="pl-0 col-2">
+                    Kubernetes
+                </div>
+                <div class="pl-0 col-2">
+                    Docker
+                </div>
+                <div class="pl-0 col-2">
+                    GitHub
+                </div>
+                <div class="pl-0 col-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INTERESTS -->
+<section class="jumbotron">
+    <div class="container">
+        <h1 class="jumbotron-heading" id="education">Interests</h1>
+        <br>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="pl-0 col-10">
                     <h3>Full Stack Developer</h3>
-                    <h4 class="subheading mb-3">&commat;Revature</h4>
-                    <ul>
-                        Trained Java-Angular fullstack and associated technologies creating three applications: a basic Expense Reimbursement System; MyMDB, a movie review database; and LifeSigns, a hospital management application
-                        Developed frontend with Angular, TypeScript, HTML/CSS, and Bootstrap to create responsive user experience across devices and platforms.
-                        Utilized Java technologies like JDBC, Hibernate, and Spring MVC, coupled with PostgreSQL and Maven, for efficient database management and project scalability.
-                        Leveraged AWS including RDS, S3, and EC2 for effective cloud infrastructure deployment and management, meeting project requirements.
-                        Employed JUnit for backend testing, Jasmine for frontend behavior validation, and Mockito for dependency simulation, ensuring 75-90%+ testing coverage throughout each project lifecycle.
-                        Implemented DevOps practices through Continuous Delivery using Jenkins pipeline to automate builds, testing, and deployment.  
-                    </ul>
-                </div>
-                <div class="flex-shrink-0">Sept '21 - Dec '21</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="jumbotron">
-        <div class="container">
-            <h1 class="jumbotron-heading" id="education">Education</h1>
-            <br>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10">
-                    <h3>Bachelor of Science - Game Design</h3>
-                    <div class="justify-content-between align-items-center">
-                        <h4 class="subheading mb-3">&commat;Full Sail University</h4>
-                    </div>
-                    <ul>
-                        GPA: 3.78 out of 4.0
-                    </ul>
-                    <ul>
-                        Member of National Society of Collegiate Scholars
-                    </ul>
-                </div>
-                <div class="flex-shrink-0">Aug '15 - Mar '18</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="jumbotron">
-        <div class="container">
-            <h1 class="jumbotron-heading" id="education">Skills</h1>
-            <br>
-            <h3>Programming Languages</h3>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10 row">
-                    <div class="justify-content-between align-items-center">
-                        <ul>
-                        </ul>
-                    </div>
-                    <div class="pl-0 col-2">
-                        TypeScript
-                    </div>
-                    <div class="pl-0 col-2">
-                        Java
-                    </div>
-                    <div class="pl-0 col-2">
-                        HTML/CSS
-                    </div>
-                    <div class="pl-0 col-2">
-                        C#
-                    </div>
-                    <div class="pl-0 col-2">
-                    </div>
-                </div>
-                <div class="flex-shrink-0"></div>
-            </div>
-            <h3>Front End</h3>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10 row">
-                    <div class="justify-content-between align-items-center">
-                        <ul>
-                        </ul>
-                    </div>
-                    <div class="pl-0 col-2">
-                        <img width="64" height="64" src="src\assets\images\svgimages\angular-icon.svg">
-                        <div>
-                            Angular
-                        </div>
-                    </div>
-                    <div class="pl-0 col-2">
-                        
-                    </div>
-                    <div class="pl-0 col-2">
-                        Jasmine
-                    </div>
-                    <div class="pl-0 col-2">
-                        Mockito
-                    </div>
-                    <div class="pl-0 col-2">
-                    </div>
-                </div>
-            </div>
-            <h3>Back End & Database</h3>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10 row">
-                    <div class="justify-content-between align-items-center">
-                        <ul>
-                        </ul>
-                    </div>
-                    <div class="pl-0 col-2">
-                        PostgreSQL
-                        ICON
-                    </div>
-                    <div class="pl-0 col-2">
-                        MySQL
-                        ICON
-                    </div>
-                    <div class="pl-0 col-2">
-                        JDBC
-                    </div>
-                    <div class="pl-0 col-2">
-                        Hibernate
-                    </div>
-                    <div class="pl-0 col-2">
-                        JUnit
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10 row">
-                    <div class="justify-content-between align-items-center">
-                        <ul>
-                        </ul>
-                    </div>
-                    <div class="pl-0 col-2">
-                        Maven
-                    </div>
-                    <div class="pl-0 col-2">
-                        Spring Boot, Data, MVC
-                    </div>
-                    <div class="pl-0 col-2">
-                        AWS RDS, S3, EC2
-                        ICON
-                    </div>
-                    <div class="pl-0 col-2">
-                        Hibernate
-                    </div>
-                    <div class="pl-0 col-2">
-                        JUnit
-                    </div>
-                </div>
-            </div>
-            <h3>Other Skills</h3>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10 row">
-                    <div class="justify-content-between align-items-center">
-                        <ul>
-                        </ul>
-                    </div>
-                    <div class="pl-0 col-2">
-                        Mictosoft Word
-                    </div>
-                    <div class="pl-0 col-2">
-                        Mictosoft Excel
-                    </div>
-                    <div class="pl-0 col-2">
-                        Mictosoft Powerpoint
-                    </div>
-                    <div class="pl-0 col-2">
-                        Mictosoft Azure
-                    </div>
-                    <div class="pl-0 col-2">
-
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10 row">
-                    <div class="justify-content-between align-items-center">
-                        <ul>
-                        </ul>
-                    </div>
-                    <div class="pl-0 col-2">
-                        
-                    </div>
-                    <div class="pl-0 col-2">
-                        Kubernetes
-                    </div>
-                    <div class="pl-0 col-2">
-                        Docker
-                    </div>
-                    <div class="pl-0 col-2">
-                        GitHub
-                    </div>
-                    <div class="pl-0 col-2">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TECHNOLOGIES -->
-    <section class="jumbotron">
-        <div class="container">
-            <h1 class="jumbotron-heading" id="education">Technologies</h1>
-            <br>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="pl-0 col-10">
-                    <h3>Game Design</h3>
-                    <div class="justify-content-between align-items-center">
-                        <div class="subheading mb-3">Full Sail University</div>
-                        <small class="text-muted">date</small>
-                    </div>
+                    <h4 class="subheading mb-3">Revature</h4>
                     <p>
                         Lorem ipsum
                     </p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- INTERESTS -->
-    <section class="jumbotron">
-        <div class="container">
-            <h1 class="jumbotron-heading" id="education">Interests</h1>
-            <br>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="pl-0 col-10">
-                        <h3>Full Stack Developer</h3>
-                        <h4 class="subheading mb-3">Revature</h4>
-                        <p>
-                            Lorem ipsum
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0">Sept '21 - Dec '21</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="flex-shrink-0">Sept '21 - Dec '21</div>
             </div>
         </div>
     </div>
-
-</main>
-
+</section>
+<!-- 
 <footer class="text-muted">
     <div class="container">
     <p class="float-right">
         <a href="#">Back to top</a>
     </p>
     </div>
-</footer>
+</footer> -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="../../assets/js/vendor/popper.min.js"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
-<script src="../../assets/js/vendor/holder.min.js"></script>
-</body>
+<script src="../../assets/js/vendor/holder.min.js"></script> -->

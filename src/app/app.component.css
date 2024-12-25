@@ -12,4 +12,11 @@
     position: fixed;
     top: 0px;
     bottom: 45px;
+    z-index:2000;
+}
+
+.header-anchor{
+    position: sticky;
+    top: 0px;
+    z-index:1000;
 }
