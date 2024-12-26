@@ -2,3 +2,18 @@
     height: 64px;
     width: 100%;
 }
+
+.smallDivide{
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    background-color: #333;  /* Modern Browsers */
+}
+
+.bigDivide{
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    background-color: #333;  /* Modern Browsers */
+    border-radius: 13px;
+}
