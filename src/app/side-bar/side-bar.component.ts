@@ -9,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class SideBarComponent {
 
+  scroll(id: string) {
+      console.log(`scrolling to ${id}`);
+    let el = document.getElementById(id);
+    if (el != null){
+      el.scrollIntoView({ behavior: "smooth", block: "start"});
+    }
+    else {
+      console.log('el is NULL')
+    }
+  }
+
 }
