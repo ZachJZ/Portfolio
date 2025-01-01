@@ -1,0 +1,12 @@
+.icon{
+    height: 64px;
+    width: 100%;
+    /* width: 7vw; */
+    /* max-width: 122px; */
+}
+.jasmineStyle{
+    margin-left: 1.7vw;
+}
+.control-max-width{
+    max-width: 122px;
+}

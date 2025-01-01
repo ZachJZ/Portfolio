@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RoutingServiceComponent } from '../routing-service/routing-service.component';
+import { IconBoxComponent } from "../icon-box/icon-box.component";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [],
+  imports: [IconBoxComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
