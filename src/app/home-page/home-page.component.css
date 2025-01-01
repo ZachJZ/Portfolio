@@ -17,3 +17,15 @@
     background-color: #333;  /* Modern Browsers */
     border-radius: 13px;
 }
+
+.logo{
+    height: 64px;
+}
+
+.card-design {
+    height: 22vw;
+}
+
+.card-space{
+    height: 7vw;
+}
