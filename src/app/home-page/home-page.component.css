@@ -3,6 +3,12 @@
     width: 100%;
 }
 
+.smIcon{
+    height: 24px;
+    width: 100%;
+    display: inline-block;
+}
+
 .smallDivide{
     border: none;
     height: 1px;
