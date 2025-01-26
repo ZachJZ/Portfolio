@@ -10,3 +10,8 @@
 .control-max-width{
     max-width: 122px;
 }
+
+.perforceStyle{
+    width: 75%;
+    margin-left: 0.5vw;
+}

@@ -6,31 +6,31 @@
     <hr>
     <ul class="nav nav-pills flex-column">
       <li class="nav-item">
-        <a (click)="scroll('about')" class="nav-link active" aria-current="page">
+        <a (click)="scroll('about')" class="nav-link" [class.active]="currentActive == 1" aria-current="page">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#about"></use></svg>
           About
         </a>
       </li>
       <li>
-        <a (click)="scroll('experience')" class="nav-link link-dark">
+        <a (click)="scroll('experience')" class="nav-link" [class.active]='currentActive == 2'>
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#experience"></use></svg>
           Experience
         </a>
       </li>
       <li>
-        <a (click)="scroll('skills')" class="nav-link link-dark">
+        <a (click)="scroll('skills')" class="nav-link" [class.active]='currentActive == 3'>
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#skills"></use></svg>
           Skills
         </a>
       </li>
       <li>
-        <a (click)="scroll('education')" class="nav-link link-dark">
+        <a (click)="scroll('education')" class="nav-link" [class.active]='currentActive == 4'>
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#education"></use></svg>
           Education
         </a>
       </li>
       <li>
-        <a (click)="scroll('interests')" class="nav-link link-dark">
+        <a (click)="scroll('interests')" class="nav-link" [class.active]='currentActive == 5'>
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#interests"></use></svg>
           Interests
         </a>

@@ -28,6 +28,7 @@ export class IconBoxComponent {
   SwaggerICON: string = "swagger-icon"
   VSCodeICON: string = "vscode-icon"
   EclipseICON: string = "eclipse-icon"
+  VS2015ICON: string = "vscode-icon"
 
   // Backend
   PostgreSQLICON: string = "postgresql-icon"
@@ -122,6 +123,10 @@ export class IconBoxComponent {
       }
       case 'VSCode': { 
         this.icon = this.VSCodeICON;
+         break; 
+      }
+      case 'VS 2015': { 
+        this.icon = this.VS2015ICON;
          break; 
       }
       case 'Visual Studio 2015': { 
