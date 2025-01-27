@@ -42,23 +42,18 @@ export class SideBarComponent implements AfterViewInit{
 
     if (this.aboutElement != null){
       this.aboutOffset = this.aboutElement.offsetTop;
-      console.log( this.aboutOffset, ' is the about')
     }
     if (this.experienceElement != null){
       this.experienceOffset = this.experienceElement.offsetTop - 50;
-      console.log( this.experienceOffset, ' is the experienceOffset')
     }
     if (this.skillsElement != null){
       this.skillsOffset = this.skillsElement.offsetTop - 50;
-      console.log( this.skillsOffset, ' is the skillsOffset')
     }
     if (this.educationElement != null){
       this.educationOffset = this.educationElement.offsetTop - 50;
-      console.log( this.educationOffset, ' is the educationOffset')
     }
     if (this.interestsElement != null){
       this.interestsOffset = this.interestsElement.offsetTop - 50;
-      console.log( this.interestsOffset, ' is the interestsOffset')
     }
   }
 
@@ -76,30 +71,30 @@ export class SideBarComponent implements AfterViewInit{
   
   @HostListener('window:scroll', ['$event'])
   checkOffsetTop() {
-    console.log(window.scrollY); // this will console log our scroll position
+    // console.log(window.scrollY); // this will console log our scroll position
     if (window.scrollY >= this.aboutOffset && window.scrollY < this.experienceOffset) {
       this.currentActive = 1;
-      console.log('here active 1');
+      // console.log('here active 1');
     } 
     else if (window.scrollY >= this.experienceOffset && window.scrollY < this.skillsOffset) {
       this.currentActive = 2;
-      console.log('here active 2');
+      // console.log('here active 2');
     } 
     else if (window.scrollY >= this.skillsOffset && window.scrollY < this.educationOffset) {
       this.currentActive = 3;
-      console.log('here active 3');
+      // console.log('here active 3');
     } 
     else if (window.scrollY >= this.educationOffset && window.scrollY < this.interestsOffset) {
       this.currentActive = 4;
-      console.log('here active 4');
+      // console.log('here active 4');
     } 
     else if (window.scrollY >= this.interestsOffset) {
       this.currentActive = 5;
-      console.log('here active 5');
+      // console.log('here active 5');
     } 
     else {
       this.currentActive = 0;
-      console.log('here active 0');
+      console.log('active 0');
     }
   }
 
