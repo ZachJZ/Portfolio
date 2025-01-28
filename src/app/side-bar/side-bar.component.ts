@@ -22,7 +22,7 @@ export class SideBarComponent implements AfterViewInit{
   educationElement = document.getElementById("education");
   interestsElement = document.getElementById("interests");
 
-  public currentActive = 0;
+  public currentActive = 1;
   public aboutOffset = 1;
   public experienceOffset = 2;
   public skillsOffset = 3;
@@ -93,9 +93,8 @@ export class SideBarComponent implements AfterViewInit{
       // console.log('here active 5');
     } 
     else {
-      this.currentActive = 0;
-      console.log('active 0');
+      this.currentActive = 1;
+      console.log(' currentActive outside bounds ');
     }
   }
-
 }
