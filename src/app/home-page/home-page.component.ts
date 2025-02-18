@@ -35,6 +35,7 @@ export class HomePageComponent {
     // this.skillsOffset = this.skillsElement.nativeElement.offsetTop;
     // this.educationOffset = this.educationElement.nativeElement.offsetTop;
     // this.interestsOffset = this.interestsElement.nativeElement.offsetTop;
+    this.showSlides(this.slideIndex);
   }
 
   // @HostListener('window:scroll', ['$event'])
@@ -53,5 +54,46 @@ export class HomePageComponent {
   //   }
   // }
 
+  slideIndex: number = 2;
+  ngAfterViewChecked(){
+    // this.showSlides(this.slideIndex);
+  
+  }
+  // Next/previous controls
+  plusSlides() {
+    this.showSlides(this.slideIndex += 1);
+  }
+    // Next/previous controls
+    minusSlides() {
+      this.showSlides(this.slideIndex += -1 );
+    }
 
+  // Thumbnail image controls
+  currentSlide(n: number) {
+    this.showSlides(this.slideIndex = n);
+  }
+
+  showSlides(n: number) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides") as HTMLCollectionOf<HTMLElement>;
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        this.slideIndex = 1
+        console.log("setting to 1");
+      }
+    if (n < 1) {
+        this.slideIndex = slides.length
+        console.log("n < 1: setting to length");
+      }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      console.log("slides for loop setting display to none for " + i);
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+      console.log("dots for loop setting display to active for " + i);
+    }
+    slides[this.slideIndex-1].style.display = "block";
+    dots[this.slideIndex-1].className += " active";
+  }
 }
