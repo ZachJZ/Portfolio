@@ -16,8 +16,24 @@ import { IconBoxComponent } from "../icon-box/icon-box.component";
 // @ViewChild('interests') interestsElement: ElementRef;
 
 export class HomePageComponent {
+  
   constructor(private myRoute: RoutingServiceComponent){
+    this.myTimer();
+  }
 
+  reset: any; 
+  counter = 5;
+  myTimer(){
+    let intervalId = setInterval(() => {
+      this.counter = <number>this.counter - 1;
+      console.log(this.counter)
+      if(this.counter === 0) {
+        // clearInterval(intervalId);
+        this.plusSlides();
+        this.counter = 5;
+      }
+    }, 1000)
+    this.counter = 5;
   }
 
   routeMe(destination: string) {
@@ -57,19 +73,20 @@ export class HomePageComponent {
   slideIndex: number = 2;
   ngAfterViewChecked(){
     // this.showSlides(this.slideIndex);
-  
   }
   // Next/previous controls
   plusSlides() {
+    this.counter = 5;
     this.showSlides(this.slideIndex += 1);
   }
-    // Next/previous controls
-    minusSlides() {
-      this.showSlides(this.slideIndex += -1 );
-    }
-
+  // Next/previous controls
+  minusSlides() {
+    this.counter = 5;
+    this.showSlides(this.slideIndex += -1 );
+  }
   // Thumbnail image controls
   currentSlide(n: number) {
+    this.counter = 5;
     this.showSlides(this.slideIndex = n);
   }
 
@@ -79,7 +96,7 @@ export class HomePageComponent {
     let dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
         this.slideIndex = 1
-        console.log("setting to 1");
+        // console.log("setting to 1");
       }
     if (n < 1) {
         this.slideIndex = slides.length
@@ -87,11 +104,11 @@ export class HomePageComponent {
       }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-      console.log("slides for loop setting display to none for " + i);
+      // console.log("slides for loop setting display to none for " + i);
     }
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace("active", "");
-      console.log("dots for loop setting display to active for " + i);
+      // console.log("dots for loop setting display to active for " + i);
     }
     slides[this.slideIndex-1].style.display = "block";
     dots[this.slideIndex-1].className += " active";
