@@ -26,7 +26,7 @@ export class HomePageComponent {
   myTimer(){
     let intervalId = setInterval(() => {
       this.counter = <number>this.counter - 1;
-      console.log(this.counter)
+      // console.log(this.counter)
       if(this.counter === 0) {
         // clearInterval(intervalId);
         this.plusSlides();
@@ -100,7 +100,7 @@ export class HomePageComponent {
       }
     if (n < 1) {
         this.slideIndex = slides.length
-        console.log("n < 1: setting to length");
+        // console.log("n < 1: setting to length");
       }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
