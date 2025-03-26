@@ -13,21 +13,21 @@ export class SideBarComponent implements AfterViewInit{
   // @ViewChild('experience') experienceElement!: ElementRef;
   // @ViewChild('skills') skillsElement!: ElementRef;
   // @ViewChild('education') educationElement!: ElementRef;
-  // @ViewChild('interests') interestsElement!: ElementRef;
+  // @ViewChild('projects') projectsElement!: ElementRef;
 
 
   aboutElement = document.getElementById("about");
   experienceElement = document.getElementById("experience");
   skillsElement = document.getElementById("skills");
   educationElement = document.getElementById("education");
-  interestsElement = document.getElementById("interests");
+  projectsElement = document.getElementById("projects");
 
   public currentActive = 1;
   public aboutOffset = 1;
   public experienceOffset = 2;
   public skillsOffset = 3;
   public educationOffset = 4;
-  public interestsOffset = 5;
+  public projectsOffset = 5;
 
 
   ngAfterViewInit() {
@@ -38,7 +38,7 @@ export class SideBarComponent implements AfterViewInit{
     this.experienceElement = document.getElementById("experience");
     this.skillsElement = document.getElementById("skills");
     this.educationElement = document.getElementById("education");
-    this.interestsElement = document.getElementById("interests");
+    this.projectsElement = document.getElementById("projects");
 
     if (this.aboutElement != null){
       this.aboutOffset = this.aboutElement.offsetTop;
@@ -52,8 +52,8 @@ export class SideBarComponent implements AfterViewInit{
     if (this.educationElement != null){
       this.educationOffset = this.educationElement.offsetTop - 50;
     }
-    if (this.interestsElement != null){
-      this.interestsOffset = this.interestsElement.offsetTop - 50;
+    if (this.projectsElement != null){
+      this.projectsOffset = this.projectsElement.offsetTop - 50;
     }
   }
 
@@ -84,11 +84,11 @@ export class SideBarComponent implements AfterViewInit{
       this.currentActive = 3;
       // console.log('here active 3');
     } 
-    else if (window.scrollY >= this.educationOffset && window.scrollY < this.interestsOffset) {
+    else if (window.scrollY >= this.educationOffset && window.scrollY < this.projectsOffset) {
       this.currentActive = 4;
       // console.log('here active 4');
     } 
-    else if (window.scrollY >= this.interestsOffset) {
+    else if (window.scrollY >= this.projectsOffset) {
       this.currentActive = 5;
       // console.log('here active 5');
     } 

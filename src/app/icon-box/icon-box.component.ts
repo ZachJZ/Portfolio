@@ -23,6 +23,7 @@ export class IconBoxComponent {
 
   // Front end
   AngularICON: string = "angular-icon"
+  BootstrapICON: string = "bootstrap-icon"
   JasmineICON: string = "jasmine-icon"
   KarmaICON: string = "karma-icon"
   SwaggerICON: string = "swagger-icon"
@@ -107,6 +108,10 @@ export class IconBoxComponent {
       // Front end
       case 'Angular': { 
         this.icon = this.AngularICON;
+         break; 
+      } 
+      case 'Bootstrap': { 
+        this.icon = this.BootstrapICON;
          break; 
       } 
       case 'Karma': { 

@@ -13,7 +13,7 @@ import { IconBoxComponent } from "../icon-box/icon-box.component";
 // @ViewChild('experience') experienceElement: ElementRef;
 // @ViewChild('skills') skillsElement: ElementRef;
 // @ViewChild('education') educationElement: ElementRef;
-// @ViewChild('interests') interestsElement: ElementRef;
+// @ViewChild('projects') projectsElement: ElementRef;
 
 export class HomePageComponent {
   
@@ -50,7 +50,7 @@ export class HomePageComponent {
     // this.experienceOffset = this.experienceElement.nativeElement.offsetTop;
     // this.skillsOffset = this.skillsElement.nativeElement.offsetTop;
     // this.educationOffset = this.educationElement.nativeElement.offsetTop;
-    // this.interestsOffset = this.interestsElement.nativeElement.offsetTop;
+    // this.projectsOffset = this.projectsElement.nativeElement.offsetTop;
     this.showSlides(this.slideIndex);
   }
 
