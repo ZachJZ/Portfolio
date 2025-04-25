@@ -3,7 +3,7 @@
     <div></div>
     <h1 class="jumbotron-heading" >About</h1>
     <p style="white-space: pre-line;" class="lead text-muted">Zach is a software developer with a vision for shaping the future with innovative technology. 
-        He became passionate about programming when he learned how to could create HI DALEY!!! systems and solve problems, and since then it has grown into a desire to  
+        He became passionate about programming when he learned how to create HI DALEY!!! systems and solve problems, and since then it has grown into a desire to  
         focus on crafting user-centric solutions to make life easier and more convenient for clients. His expertise is in UI design, front-end development, and 
         technologies based around Angular and TypeScript. Bringing a thoughtful, adaptable approach to every project, he prioritizes clear 
         communication, integrity, and sustainability in the work he does. If you share that vision for impactful technology, explore this portfolio and connect!
@@ -485,16 +485,17 @@
                             <div class="slideshow-container">
 
                                 <!-- Full-width images with number and caption text -->
-                                <div class="mySlides fade">
+                                 <div *ngFor="let slide of slideGroup1" class="mySlides fade"> 
+                                    <div class="numbertext"></div>
+                                    <img src={{slide.src}} style="width:100%">
+                                    <div class="text">{{slide.name}}</div>
+                                 </div>
+
+                                <!-- <div class="mySlides fade">
                                     <div class="numbertext"></div>
                                     <img src="/assets/images/pngimages/ShipBlaster.png" style="width:100%">
                                     <div class="text">Galaga Iteration</div>
                                 </div>
-                                <!-- <div class="mySlides fade">
-                                    <div class="numbertext">2 / 4</div>
-                                    <img src="/assets/images/pngimages/ThroughTheTomb.png" style="width:100%">
-                                    <div class="text">Through The Tomb</div>
-                                </div> -->
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
                                     <img src="/assets/images/pngimages/Degree Pics/Bedroom.png" style="width:100%">
@@ -509,7 +510,7 @@
                                     <div class="numbertext"></div>
                                     <img src="/assets/images/pngimages/Degree Pics/SpaceRacerLv1.png" style="width:100%">
                                     <div class="text">Physics Racing</div>
-                                </div>
+                                </div> -->
                             
                                 <!-- Next and previous buttons -->
                                 <a class="prev" (click)="minusSlides()">&#10094;</a>
@@ -519,10 +520,12 @@
                             
                             <!-- The dots/circles -->
                             <div style="text-align:center">
-                                <span class="dot" (click)="currentSlide(1)"></span>
+                                <span *ngFor="let slide of slideGroup1" 
+                                      class="dot" (click)="currentSlide(slide.id)"></span>
+                        <!--    <span class="dot" (click)="currentSlide(1)"></span>
                                 <span class="dot" (click)="currentSlide(2)"></span>
                                 <span class="dot" (click)="currentSlide(3)"></span>
-                                <span class="dot" (click)="currentSlide(4)"></span>
+                                <span class="dot" (click)="currentSlide(4)"></span> -->
                                 <!-- <span class="dot" (click)="currentSlide(5)"></span> -->
                             </div>
                             <!-- SLIDESHOW END -->

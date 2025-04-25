@@ -1,11 +1,12 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RoutingServiceComponent } from '../routing-service/routing-service.component';
 import { IconBoxComponent } from "../icon-box/icon-box.component";
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [IconBoxComponent],
+  imports: [IconBoxComponent, NgFor],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
@@ -21,6 +22,14 @@ export class HomePageComponent {
     this.myTimer();
   }
 
+  slideGroup1 = [
+    { id: 1, src: '/assets/images/pngimages/ShipBlaster.png', name: 'Galaga Iteration' },
+    { id: 2, src: '/assets/images/pngimages/Degree Pics/Bedroom.png', name: 'Bedroom Level'},
+    { id: 3, src: '/assets/images/pngimages/Degree Pics/POngGame.png', name: 'Pong Recreation'},
+    { id: 4, src: '/assets/images/pngimages/Degree Pics/SpaceRacerLv1.png', name: 'Physics Racing'},
+    // { id: 5, src: '/assets/images/pngimages/Degree Pics/Bedroom.png', name: 'Physics Racing'},
+    // { id: 6, src: '/assets/images/pngimages/ShipBlaster.png', name: 'Physics Racing'},
+  ];
   reset: any; 
   counter = 5;
   myTimer(){
