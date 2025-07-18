@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, ViewChild } from '@angular/core';
 import { RoutingServiceComponent } from '../routing-service/routing-service.component';
 import { IconBoxComponent } from "../icon-box/icon-box.component";
 import { NgFor } from '@angular/common';

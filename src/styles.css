@@ -6,22 +6,39 @@ html, body {
 
 /*  and (orientation: landscape)
     and (orientation: portrait) */
-@media only screen and (max-width: 600px){
 
+@media only screen and (max-width: 600px){
+.p{
+color:red;
+}
+}
+@media only screen and (max-width: 600px){
+    .p{
+color:blue;
+}
 }
 
 @media only screen and (min-width: 601px) {
-
+.p{
+color:green;
+}
 }
 
 @media only screen and (max-width: 768px) {
-
+.p{
+color:gold;
+}
 }
 
 @media only screen and (max-width: 992px) {
-
+/* disable sidebar here */
+.p{
+color:orange;
+}
 }
 
 @media only screen and (max-width: 1200px) {
-
+.p{
+color:greenyellow;
+}
 }
