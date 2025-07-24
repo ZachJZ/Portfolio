@@ -3,7 +3,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { LayoutModule } from '@angular/cdk/layout';
 export const routes: Routes = [
 
     { path: 'home', component: HomePageComponent },
@@ -14,7 +14,8 @@ export const routes: Routes = [
 
 @NgModule({
     imports: [RouterModule.forRoot(routes), 
-        CommonModule
+        CommonModule, LayoutModule
+        
     ],
     exports: [RouterModule]
   })
